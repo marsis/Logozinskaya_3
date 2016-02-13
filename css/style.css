@@ -2,16 +2,13 @@
 {margin:0;
 padding:0;
 }
+
 body
 	{
 	background: F9F9F9;
 	font-family: Arial, Tahoma;
 	}
 	
-	.text
-	{
-	width: 600px;
-	}
 	.wrapper 
 	{
 	 width: 100%;
@@ -20,9 +17,9 @@ body
 	 }
 	.block_main
 	{
-	 width: 1200px;
-	 height: 1000px;
-	 background: FFFFFF;
+	 width: 1060px;
+	 height: 900px;
+	 background: #FFFFFF;
 	 margin: 0 auto;
 	 padding: 0 auto;
 	 border: 2px ridge gray;
@@ -30,27 +27,23 @@ body
 	 -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 	 box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.75);
 	}
-	.logo
-	{
-	margin-left: 140;
-	}
-	
 	.heder
 	{
-	 width: 1100px;
-	 height: 45px;
+	 width: 960px;
+	 height: 50px;
 	 background: FFFFFF;
-	 padding: 40 0 30 40;
+	 margin: 50px;
 	}
+	
 	
 	.top_menu
 	{
-	width: 1100px;
+	width: 960px;
 	height: 20px;
 	background: linear-gradient(to top, #444343, #5E5E5E);
 	margin: 0 auto;
 	padding: 10px 0px;
-	border: 2px solid white;
+	
 	}
 	
 	.top_button{
@@ -58,90 +51,105 @@ body
 	    line-height:0; /* ...и вертикальные в некоторых браузерах */
 		letter-spacing:-1px; /* переубеждаем webkit'ы */
 		
-	}
-	.top_button_li{
-		font-size:16px; /* Не забываем восстановить нормальные значения */
-		line-height:normal;
-	    letter-spacing:normal;
-	    display: -moz-inline-stack!important;
-	    display:inline-block;
-	    //display:inline;
-	    zoom:1;
+	} 
+	.top_button li{
+		font-size: 16px; /* Восстанавливаем нормальные значения */
+		line-height: normal;
+	    letter-spacing: normal;
+	    display: inline-block;
 		
-		
-	}
-	.underline_top
-	{
+	   	}
+	.top_button li a {
 	color: #EBEBEB;
 	text-decoration: none;
-    padding: 55px;	
+    padding: 0 40px;
 	}
-	.img 
-	{
-		width: 750px;
-		height: 450px;
-		margin-right=50px;
-		border: 2px solid silver;
+	.top_button a:hover { 
+    background: linear-gradient(to top, #2E2E2E, #494949);
+	padding: 0 40px;
+	border-left: 2px solid #838383;
+	border-right: 2px solid #838383;
 	}
-	.underline_left
-	{
-	text-decoration: none; /* Убираем подчеркивание у ссылок */
-	color: #656363;
-   }
-   
-   a:hover { 
-    width: 1100px;
-	height: 20px;
-	background: linear-gradient(to top, #2E2E2E, #494949);
-	margin: 0 auto;
-	padding: 10px 0px;
-	}
-	.left_menu{
-		width: 300px;
-		height: 350px;
-		background: FFFFFF;
-		margin-left: 50px;
-		margin-top: 40px;
-		padding-left: 20px;
-		float: left;
-		border: 2px solid silver;
-	}
-	.catalog {
-    width: 500px;
-	}
-	.catalog_li 
-	{
-    display: inline-block;
-    width: 150px;
-    margin: 0 10px 15px 0;
-    vertical-align: center;
-    text-align: left;
-	line-height: 40px;
-    // display: inline; /* для IE6-7 */
-	border-bottom: 2px solid silver;
-	}
-	.content{
-	width: 800px;
-	height: 625px;
-	background: FFFFFF;
-	margin-top: 40px;
-	margin-left: 400px;
-	margin-right: 0px;
 	
-		
+
+.content{
+	width: 960px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.img 
+	{
+		width: 670px;
+		height: 390px;
+		background: #FFFFFF;
+		margin-top: 40px;
+		margin-left: 50px;
+			}	
+	
+	.sidebar{
+		width: 237px;
+		background: #FFFFFF;
+		float: left;
+		margin-top: 40px;
+		font: 12/40;
+		border: 1px solid #C8C8C8;
+		}
+	
+	.menu a{
+	background: #ffffff;
+	color: #656363;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #C8C8C8;
+	transition: 0.5s all;
+	text-decoration: none;
+	font-size: 14px;
 	}
+	.menu a :last-child{
+	border-bottom: none;
+	}
+.menu a:hover{
+	background: #f9f9f9;
+	padding: 10px 0 10px 40px;
+	color: #2C2C2C;
+	
+}
+	
+.text
+	{
+	width: 650px;
+	margin-top: 50px;
+	margin-left: 300px;
+	
+	}		
+	
 	.footer
 	{
-	width: 1100px;
+	width: 960px;
 	height: 20px;
 	background: #E1E1E1;
 	margin: 0 auto;
-	padding: 10px 0px;	
+	margin-top: 50px;
+	padding: 10px 0px;
 	}
-	.underline_footer
-	{
+	/*.menu_footer li a{
 	color: #2C2C2C;
 	text-decoration: none;
     padding: 55px;	
+	}*/
+	.footer li{
+		display:inline-block;
 	}
-	
+	.footer li a{
+	text-decoration: none;
+	color: #595959;
+	padding: 0 40px;
+	font-size: 12px;
+	}
+	.footer li a:last-child{
+		padding: 0 40px;
+	}
+	.footer a :hover{
+	text-decoration: underline;
+	}
